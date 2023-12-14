@@ -30,18 +30,17 @@
   background-image: url('images/clif.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  /* background-size: cover ; */
+  background-size: contain;
+  /* overflow: hidden; */
   aspect-ratio: 6/19;
   opacity: 0;
-   position: absolute;
+  position: absolute;
   bottom: 0px;
-  right:0px;
-  /* z-index: 1; */
+  right: 0px;
   width: 100%;
   height: 100%;
   animation: fade-in 1s ease-in-out 1s forwards;
 }
-
 
 .person {
   opacity: 0;
@@ -51,11 +50,11 @@
   aspect-ratio: 6/19;
   background-position: center left;
   position: absolute;
-  bottom: 35%;
-  right: 20%;
+  bottom: 25%;
+  right: 5%;
   width: 15vh;
-  height: 15vw; 
-  animation: fade-in 1s ease-in-out 2s forwards; 
+  height: 15vw;
+  animation: fade-in 1s ease-in-out 2s forwards;
 }
 /* @media (max-width: 320px) {
   .person {
@@ -66,20 +65,17 @@
 
 */
 @media (min-width: 569px) and (max-width: 767px) {
-  .person{
+  .person {
     bottom: 40%;
     right: 15%;
   }
 }
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
   .person {
     bottom: 25%;
     right: 5%;
   }
-}  
-
-
-
+}
 
 .sun {
   width: 50px;
@@ -101,18 +97,27 @@
 }
 
 .logo {
-  width: 50%;
+  width: 100vw;
   height: 100%;
-  background-image: url("images/UniversalPainMGMT.png");
+  background-image: url('images/UniversalPainMGMT.png');
   background-repeat: no-repeat;
-  background-size: 100% 50%;
+  background-size: 100vw auto;
   background-position: center center;
   aspect-ratio: 6/19;
-position: relative;
+  position: relative;
   z-index: 1;
   opacity: 0;
   animation: showingLogo 2.1s ease-in-out 3s forwards;
 }
+
+
+@media (min-width: 769px) {
+.logo{
+  background-size: 60vw auto
+}
+}
+
+
 
 .overlay1 {
   content: '';
@@ -329,7 +334,6 @@ position: relative;
     background-position: 0% 50%;
   }
 }
-
 
 /*.logo img {
   position: absolute;
