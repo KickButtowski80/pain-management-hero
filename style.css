@@ -154,7 +154,7 @@
 }
 .bird-two {
   animation-duration: 0.9s;
-  animation-delay: -0.75.s;
+  animation-delay: -0.75s;
 }
 .bird-three {
   animation-duration: 1.25s;
@@ -172,7 +172,7 @@
   transform: scale(0) translateX(-10vw);
   will-change: transform;
   width: 50vw;
-  animation-name: fly-right-one;
+  animation-name: fly-right-two;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
