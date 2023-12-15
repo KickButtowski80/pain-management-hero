@@ -110,15 +110,11 @@
   animation: showingLogo 2.1s ease-in-out 3s forwards;
 }
 
-
 @media (min-width: 769px) {
-.logo{
-  background-size: 60vw auto
+  .logo {
+    background-size: 60vw auto;
+  }
 }
-}
-
-
-
 
 @keyframes skyDawn {
   50% {
@@ -128,7 +124,6 @@
     background-position: 52% 100%;
   }
 }
-
 
 @keyframes fade-in {
   0% {
@@ -173,10 +168,10 @@
 .bird-container {
   position: absolute;
   top: 10%;
-  left: -3%;
+  left: -100px;
   transform: scale(0) translateX(-10vw);
   will-change: transform;
-   width: 50vw;
+  width: 50vw;
   animation-name: fly-right-one;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -184,7 +179,7 @@
 
 .bird-container-one {
   animation-duration: 15s;
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 .bird-container-two {
