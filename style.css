@@ -119,18 +119,6 @@
 
 
 
-.overlay1 {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #ff9800, #ffeb3b);
-  background-size: 400% 400%;
-  opacity: 0.25;
-  animation: skyDawn 3s ease forwards;
-}
 
 @keyframes skyDawn {
   50% {
@@ -141,13 +129,7 @@
   }
 }
 
-.seagull-flying img {
-  position: absolute;
-  top: 50%;
-  left: 88px;
-  width: 65px;
-  height: 73px;
-}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -176,7 +158,7 @@
   animation-delay: -0.5s;
 }
 .bird-two {
-  animation-duration: 0.9;
+  animation-duration: 0.9s;
   animation-delay: -0.75.s;
 }
 .bird-three {
@@ -194,7 +176,7 @@
   left: -3%;
   transform: scale(0) translateX(-10vw);
   will-change: transform;
-
+   width: 50vw;
   animation-name: fly-right-one;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
