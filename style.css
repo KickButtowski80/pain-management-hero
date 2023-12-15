@@ -168,7 +168,7 @@
 .bird-container {
   position: absolute;
   top: 10%;
-  left: -100px;
+  /* left: -100px; */
   transform: scale(0) translateX(-10vw);
   will-change: transform;
   width: 50vw;
@@ -264,12 +264,13 @@
   }
 
   51% {
-    transform: translateY(0vh) translateX(100vw) scale(0.45);
+    transform: translateY(0vh) translateX(95vw) scale(0.45);
+ 
   }
 
   100% {
-    transform: translateY(0vh) translateX(100vw) scale(0.45);
-    opacity: 0;
+    /* transform: translateY(0vh) translateX(110vw) scale(0.45); */
+    transform: translateY(0vh) translateX(101vw) scale(0.6);
   }
 }
 
