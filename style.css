@@ -30,9 +30,8 @@
   background-image: url('images/clif.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: contain;
-  /* overflow: hidden; */
-  aspect-ratio: 6/19;
+  background-size: 603px;
+  aspect-ratio: 500/333;
   opacity: 0;
   position: absolute;
   bottom: 0px;
@@ -50,30 +49,18 @@
   aspect-ratio: 6/19;
   background-position: center left;
   position: absolute;
-  bottom: 25%;
-  right: 5%;
-  width: 15vh;
-  height: 15vw;
+  bottom: 120px;
+  right: 180px;
+  width: 80px;
   animation: fade-in 1s ease-in-out 2s forwards;
 }
-/* @media (max-width: 320px) {
-  .person {
-    bottom: 25%;
-    right: 5%;
-  }
-}
 
-*/
-@media (min-width: 569px) and (max-width: 767px) {
-  .person {
-    bottom: 40%;
-    right: 15%;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-}
-@media (min-width: 768px) {
-  .person {
-    bottom: 25%;
-    right: 5%;
+  100% {
+    opacity: 1;
   }
 }
 
@@ -99,9 +86,9 @@
 .logo {
   width: 100vw;
   height: 100%;
-  background-image: url('images/UniversalPainMGMT.png');
+  background-image: url('images/hero-visiable-text-logo.png');
   background-repeat: no-repeat;
-  background-size: 100vw auto;
+  background-size: 100% auto;
   background-position: center center;
   aspect-ratio: 6/19;
   position: relative;
@@ -112,25 +99,7 @@
 
 @media (min-width: 769px) {
   .logo {
-    background-size: 60vw auto;
-  }
-}
-
-@keyframes skyDawn {
-  50% {
-    background-position: 49% 0%;
-  }
-  100% {
-    background-position: 52% 100%;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    background-size: 50% auto;
   }
 }
 
@@ -142,7 +111,6 @@
   width: 88px;
   height: 125px;
   will-change: background-position;
-
   animation-name: fly-cycle;
   animation-timing-function: steps(10);
   animation-iteration-count: infinite;
@@ -265,7 +233,6 @@
 
   51% {
     transform: translateY(0vh) translateX(95vw) scale(0.45);
- 
   }
 
   100% {
